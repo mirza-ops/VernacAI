@@ -1,75 +1,115 @@
-# React + TypeScript + Vite
+# VernacAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### AI-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education
 
-Currently, two official plugins are available:
+VernacAI is an AI-powered learning platform designed to make primary education more accessible through **mother-tongue-based learning, adaptive pedagogy, multilingual translation, and voice interaction**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The platform connects students and teachers through a unified learning environment where teachers can create and localize lessons, while students can learn using their preferred language and interact with an AI tutor.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Core Features
 
-## Expanding the ESLint configuration
+### 👨‍🎓 Student Learning
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Student authentication
+- Personalized student profile
+- Class-level selection
+- Preferred-language selection
+- Published lesson discovery
+- Lesson preview
+- Original and translated lesson content
+- AI Tutor
+- Context-aware lesson questioning
+- Multiple learning modes
+- Voice input
+- Voice output
+- Learning history
+- Session tracking
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 👨‍🏫 Teacher Workspace
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Teacher authentication
+- AI-assisted lesson generation
+- Subject and class selection
+- Lesson localization
+- Translation into Indian languages
+- Save lessons to Supabase
+- Publish / unpublish lessons
+- Lesson management
+- Lesson preview
+- Lesson deletion
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🤖 AI & Language Intelligence
 
-```
+- AI-generated educational content
+- Class-level adaptive explanations
+- Pedagogy-aware responses
+- Context-aware AI tutoring
+- Multilingual translation
+- Speech-to-text
+- Text-to-speech
+- Indian-language support
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Adaptive Pedagogy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+VernacAI adapts explanations according to the learner's class level.
 
-```
+The pedagogy layer adjusts:
+
+- Vocabulary complexity
+- Sentence length
+- Explanation depth
+- Examples
+- Subject terminology
+- Reasoning level
+
+For example, a concept for a younger student can be explained using short sentences and familiar examples, while higher classes can receive more detailed academic explanations.
+
+---
+
+## 🔄 Learning Flow
+
+```text
+Teacher
+   │
+   ▼
+Create Lesson
+   │
+   ▼
+AI Lesson Generation
+   │
+   ▼
+Localization / Translation
+   │
+   ▼
+Save Lesson
+   │
+   ▼
+Publish
+   │
+   ▼
+Student
+   │
+   ▼
+Learn in Preferred Language
+   │
+   ▼
+Ask VernacAI
+   │
+   ▼
+Context-Aware AI Tutor
+   │
+   ├── Explain
+   ├── Example
+   ├── Simplify
+   ├── Quiz Me
+   └── Translate
+   │
+   ▼
+Voice Interaction
+   │
+   ▼
+Learning History
